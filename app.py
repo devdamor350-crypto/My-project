@@ -411,7 +411,7 @@ def recommend_diseases():
     tips = pd.read_csv("health_tips.csv")
 
     # Load ML Model
-    svc_model = pickle.load(open("svc.pkl", "rb"))
+    #svc_model = pickle.load(open("svc.pkl", "rb"))
     dataset = pd.read_csv("Training.csv")
     all_symptoms = dataset.columns[:-1].tolist()
 
